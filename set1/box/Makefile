@@ -1,4 +1,4 @@
-SRC = IPAddress.cpp\
+SRC = box.cpp\
 	test_IPAddress.cpp
 
 INC = IPAddress.h\
