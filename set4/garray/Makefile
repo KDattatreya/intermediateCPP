@@ -1,10 +1,5 @@
-SRC = arrays.cpp\
-	test_arrays.cpp
-
-INC = arrays.h\
-
-run:$(SRC)
-	g++ $(SRC) $(INC) -lgtest -lgtest_main -lpthread -o all.out
+run:arrays.cpp test_arrays.cpp
+	g++ arrays.cpp test_arrays.cpp arrays.h -lgtest -lgtest_main -lpthread -o all.out
 
 test:
 	./all.out
