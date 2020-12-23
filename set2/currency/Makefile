@@ -1,10 +1,5 @@
-SRC = currency.cpp\
-	test_currency.cpp
-
-INC = currency.h\
-
-run:$(SRC)
-	g++ $(SRC) $(INC) -lgtest -lgtest_main -lpthread -o all.out
+run:currency.cpp test_currency.cpp 
+	g++ currency.cpp test_currency.cpp currency.h -lgtest -lgtest_main -lpthread -o all.out
 
 test:
 	./all.out
