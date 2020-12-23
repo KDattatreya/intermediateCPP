@@ -1,10 +1,5 @@
-SRC = time.cpp\
-	test_time.cpp
-
-INC = time.h\
-
-run:$(SRC)
-	g++ $(SRC) $(INC) -lgtest -lgtest_main -lpthread -o all.out
+run:time.cpp test_time.cpp
+	g++ time.cpp test_time.cpp time.h -lgtest -lgtest_main -lpthread -o all.out
 
 test:
 	./all.out
