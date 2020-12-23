@@ -1,10 +1,7 @@
-SRC = color.cpp\
-	test_color.cpp
 
-INC = color.h\
+run:color.cpp test_color.cpp
 
-run:$(SRC)
-	g++ $(SRC) $(INC) -lgtest -lgtest_main -lpthread -o all.out
+	g++ run:color.cpp test_color.cpp color.h -lgtest -lgtest_main -lpthread -o all.out
 
 test:
 	./all.out
