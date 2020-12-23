@@ -3,23 +3,23 @@
 
 TEST(Customer, credit) 
 {
-  Customer p1("001", "ABC", "987654321", 125.68);
-  EXPECT_EQ(125.68, p1.getBalance());
+  Customer p1("888", "ABC", "765432198", 100.23);
+  EXPECT_EQ(100.23, p1.getBalance());
   p1.credit(200);
-  EXPECT_EQ(325.68, p1.getBalance());
+  EXPECT_EQ(300.23, p1.getBalance());
 }
 TEST(Customer, makeCall) 
 {
-  Customer p1("001", "ABC", "987654321", 125.68);
-  EXPECT_EQ(125.68, p1.getBalance());
-  p1.makeCall(1.26);
-  EXPECT_EQ(124.42, p1.getBalance());
+  Customer p1("888", "ABC", "765432198", 100.23);
+  EXPECT_EQ(100.23, p1.getBalance());
+  p1.makeCall(1.30);
+  EXPECT_EQ(98.93, p1.getBalance());
 }
 
 TEST(Customer, getBalance)
 {
-  Customer p1("001", "ABC", "987654321", 15.68);
-  EXPECT_EQ(15.68,p1.getBalance());
+  Customer p1("888", "ABC", "765432198", 10.98);
+  EXPECT_EQ(10.98,p1.getBalance());
 }
 
 int main()
