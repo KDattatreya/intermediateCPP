@@ -1,10 +1,6 @@
-SRC = box.cpp\
-	test_IPAddress.cpp
 
-INC = IPAddress.h\
-
-run:$(SRC)
-	g++ $(SRC) $(INC) -lgtest -lgtest_main -lpthread -o all.out
+run:box.cpp test_box.cpp
+	g++ box.cpp test_box.cpp box.h -lgtest -lgtest_main -lpthread -o all.out
 
 test:
 	./all.out
