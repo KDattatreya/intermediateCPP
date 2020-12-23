@@ -4,7 +4,7 @@
 TEST(Color, invert) 
 {
   Color a1;
-  Color a2(255, 255, 255);
+  Color a2(100, 100, 100);
   Color a3 = a1;
   a1 = a1.invert();
   EXPECT_EQ(a2.m_r,a1.m_r);
