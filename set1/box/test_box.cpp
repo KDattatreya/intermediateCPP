@@ -12,21 +12,21 @@ TEST(Box, Default_Constructor)
 
 TEST(Box, Parameterized_Constructor) 
 {
-  Box b1(2, 3, 5);
+  Box b1(2, 2, 2);
   EXPECT_EQ(2, b1.length());
-  EXPECT_EQ(3, b1.breadth());
-  EXPECT_EQ(5, b1.height());
-  EXPECT_EQ(30, b1.volume());
+  EXPECT_EQ(2, b1.breadth());
+  EXPECT_EQ(2, b1.height());
+  EXPECT_EQ(8, b1.volume());
 }
 
 TEST(Box, Copy_Constructor) 
 {
-  Box b1(10, 9, 5);
+  Box b1(5, 3, 10);
   Box b2 = b1;
-  EXPECT_EQ(10, b1.length());
-  EXPECT_EQ(9, b1.breadth());
-  EXPECT_EQ(5, b1.height());
-  EXPECT_EQ(450, b1.volume());
+  EXPECT_EQ(5, b1.length());
+  EXPECT_EQ(3, b1.breadth());
+  EXPECT_EQ(10, b1.height());
+  EXPECT_EQ(150, b1.volume());
 }
 
 int main()
