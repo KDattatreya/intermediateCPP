@@ -4,12 +4,12 @@
 TEST(Image, move) 
 {
   Image a1(1, 2, 100, 200);
-  EXPECT_EQ((11, 22), a1.move(10, 20));
+  EXPECT_EQ((10, 12), a1.move(9, 10));
 }
 TEST(Image, scale) 
 {
-  Image a1(1, 2, 1066, 1600);
-  EXPECT_EQ((3, 6), a1.scale(3));
+  Image a1(3, 4, 1066, 1600);
+  EXPECT_EQ((3, 4), a1.scale(1));
 }
 TEST(Image, resize) {
   Image a1(4, 6, 1066, 1600);
