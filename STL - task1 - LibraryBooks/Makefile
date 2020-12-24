@@ -1,11 +1,4 @@
-SRC = library.cpp\
-	book.cpp\
-	main.cpp\
-
-INC = book.h\
-	library.h\
-	
-run: $(SRC) 
-	g++ $(SRC) $(INC) -o all.out
+run: library.cpp book.cpp main.cpp
+	g++ library.cpp book.cpp main.cpp book.h library.h -o all.out
 	./all.out
 	rm -f *.out
